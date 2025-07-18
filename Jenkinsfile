@@ -11,10 +11,10 @@ pipeline{
                 echo ("this is lemor defining block")
                 srcipt{
                      def lemor = "rem"
-                     if (lemor=="rem")
-                        println("thanks for enrolling")
+                     if (lemor == "rem")
+                        println(thanks for enrolling for $(lemor))
                      else
-                        println("please enroll for benefits")
+                        println(please enroll for benefits)
                 }
             }
          }
