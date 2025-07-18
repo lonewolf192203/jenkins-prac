@@ -9,8 +9,6 @@ pipeline{
              }
         }
         stage ("groovy"){
-            agent{
-                label 'java-21'
             }
              steps {
             def name = "sai"
