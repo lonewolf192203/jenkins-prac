@@ -9,8 +9,8 @@ pipeline{
         stage ("groovy"){
              steps {
                 srcipt{
-                     def name = "sai"
-                     println("thanks you ${name} for your choice")
+                     def lemor = "rem"
+                     println("thanks you ${lemor} for your choice")
                 }
             }
          }
