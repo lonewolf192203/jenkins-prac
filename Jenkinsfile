@@ -8,7 +8,7 @@ pipeline{
         }
         stage ("groovy"){
              steps {
-                srcipt{
+                script{
                      def lemor = "rem"
                      println("thanks you ${lemor} for your choice")
                 }
