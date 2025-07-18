@@ -12,7 +12,7 @@ pipeline{
             }
              steps {
             def name = "sai"
-            println(thanks you ${name})
+            println("thanks you ${name}")
             }
          }
         }
