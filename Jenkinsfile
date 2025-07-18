@@ -12,7 +12,7 @@ pipeline{
                 srcipt{
                      def lemor = "rem"
                      if (lemor=="rem")
-                        println("thanks for enrolling for $(lemor)")
+                        println("thanks for enrolling")
                      else
                         println("please enroll for benefits")
                 }
