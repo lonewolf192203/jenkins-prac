@@ -8,13 +8,9 @@ pipeline{
         }
         stage ("groovy"){
              steps {
-                echo ("this is lemor defining block")
                 script{
-                     def lemor = "rem"
-                     if (lemor == "rem")
-                        println(thanks for enrolling for $(lemor))
-                     else
-                    println(please enroll for benefits)
+                     def name = "sai"
+                     println("thanks you ${name} for your choice")
                 }
             }
          }
