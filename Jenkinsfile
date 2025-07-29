@@ -1,13 +1,23 @@
 pipeline{
     agent any
     stages{
-        stage ("stage1") {
-            steps{
-                retry(3){ 
-                     echo "hello ramu"
-                     error "this is an error code"
-                }
+        stage ("1st stage"){
+        steps {
+            
+            echo "hello anunay"
+            sh "hostname -i"
+             }
+        }
+         
+        
+        stage ("2nd stage"){
+            agent{
+                label 'java-node'
             }
+             steps {
+            echo "hello hey"
+            sh "hostname -i"
+            }
+         }
         }
     }
-}
