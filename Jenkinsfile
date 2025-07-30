@@ -5,7 +5,9 @@ pipeline{
     stages{
         stage("build"){
             steps{
-            sleep 60
+                timeout (time:5, unit:'seconds')
+                sleep 60
+                
             }
         }
     }
