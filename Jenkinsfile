@@ -1,18 +1,12 @@
 pipeline{
-    agent any
+    agent{
+        label "java-node"
+    }
     stages{
-        stage ("1st stage"){
-        steps {
-            echo "hello anunay"
-             }
-        }
-        stage ("groovy"){
-             steps {
-                script{
-                     def name = "sai"
-                     println("thanks you ${name} for your choice")
-                }
+        stage("build"){
+            steps{
+            sleep 60
             }
-         }
         }
     }
+}
