@@ -4,13 +4,17 @@ pipeline{
     }
     stages{
         stage('Build'){
-            echo('this is build stage')
+            steps{
+                echo('this is build stage')
+            }
         }
         stage('deployment'){
-            echo('this is deployment stage')
+            steps{
+                echo('this is deployment stage')
         }
         stage('Scans'){
-            echo('this is scan stage')
+            steps{
+                echo('this is scan stage')
         }
     }
 }
