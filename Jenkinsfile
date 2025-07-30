@@ -6,7 +6,7 @@ pipeline{
     stages{
         stage("maven"){
                     tools{
-                    maven 'maven-3.8.8'
+                    maven '3.8.8'
                          }
             steps{
                 sh "java --version"
