@@ -1,23 +1,16 @@
 pipeline{
-    agent any
-    
-    tools{
-        maven 'maven 3.8.8'
+    agent{
+        label "java-node"
     }
-
     stages{
-        stage("maven"){
-            steps{
-                sh "mvn --version"
-            }
+        stage('Build'){
+            echo('this is build stage')
         }
-        stage("diff maven"){
-            tools{
-                jdk 'JDK-17'
-            }
-                steps{
-                sh "mvn --version"
-            }
+        stage('deployment'){
+            echo('this is deployment stage')
+        }
+        stage('Scans'){
+            echo('this is scan stage')
         }
     }
 }
