@@ -2,14 +2,15 @@ pipeline{
     agent{
         label "java-node"
     }
+
+    tools{
+        maven 'maven-3.8.8'
+    }
+    
     stages{
-        stage("build"){
+        stage("maven"){
             steps{
-                timeout (time:5, unit:'SECONDS'){
-                       sleep 60
-                }
-              
-                
+                mvn --version
             }
         }
     }
