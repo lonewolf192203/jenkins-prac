@@ -12,11 +12,11 @@ pipeline{
             steps{
                 echo('this is deployment stage')
         }
+        }
         stage('Scans'){
             steps{
                 echo('this is scan stage')
         }
     }
-}
 }
 }
